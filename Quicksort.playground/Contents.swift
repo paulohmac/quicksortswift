@@ -7,9 +7,9 @@ class QuickSort{
             return array
         }
         let pivot = array[(array.count - 1) / 2]
-        let lower = array.filter{$0 < pivot}
-        let higher = array.filter{$0 > pivot}
-        let center = array.filter{$0 == pivot}
+        let lower = array.filter{ $0 < pivot }
+        let higher = array.filter{ $0 > pivot }
+        let center = array.filter{ $0 == pivot }
 
         return sort(array: lower) + center + sort(array: higher)
     }
